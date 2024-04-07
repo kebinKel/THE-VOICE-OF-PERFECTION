@@ -1,6 +1,7 @@
 let menu_open = document.querySelector('.fa-bars');
 let menu_close = document.querySelector('.fa-xmark');
 let nav_contents = document.querySelector('.nav-contents');
+let dim = document.querySelector('.dim');
 let O01 = document.querySelector('.O01');
 let O02 = document.querySelector('.O02');
 let O03 = document.querySelector('.O03');
@@ -11,6 +12,7 @@ menu_open.onclick = (()=>{
     
     menu_open.classList.add('close')
     menu_close.classList.add('open')
+    dim.classList.add('open')
     nav_contents.classList.toggle('open')
     console.log(O01);
     O01.classList.toggle('open')
@@ -23,6 +25,7 @@ menu_open.onclick = (()=>{
 menu_close.onclick = (()=> {
     menu_close.classList.toggle('open')
     menu_open.classList.remove('close')
+    dim.classList.remove('open')
     nav_contents.classList.toggle('open')
     console.log(O01);
     O01.classList.toggle('open')
