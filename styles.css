@@ -22,7 +22,7 @@ header {
 nav {
     width: 80%;
     height: 100%;
-    position: absolute;
+    position: fixed;
 }
 
 .nav-head {
@@ -40,6 +40,23 @@ nav {
     position: fixed;
     cursor: pointer;
     z-index: 2;
+}
+.nav-head > .fa-xmark {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.846);
+    margin: 5% 5%;
+    position: fixed;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+
+.fa-xmark.open {
+    display: block;
+}
+
+.fa-bars.close {
+    display: none;
 }
 
 nav > .nav-contents {
@@ -59,6 +76,11 @@ nav > .nav-contents {
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
+    transition: 2s;
+}
+
+.nav-contents.open {
+    left: 0;
 }
 
 li {
@@ -137,7 +159,7 @@ h1 {
     width: 200px;
     object-fit: cover;
     border-radius: 10px;
-    height: 300px;
+    height: 250px;
 }
 
 .series {
@@ -147,4 +169,56 @@ h1 {
     overflow-y: hidden;
     gap: 10%;
     word-wrap: break-word;
+}
+
+/* .nav-lists {
+    margin-left: -100%;
+    transition: 2s;
+}
+.nav-lists.open {
+    margin-left: 0;
+} */
+
+
+
+.O01 {
+    margin-left: -100%;
+    transition: 2s;
+}
+.O02 {
+    margin-left: -100%;
+    transition: 2s;
+}
+.O03 {
+    margin-left: -100%;
+    transition: 2s;
+}
+.O04 {
+    margin-left: -100%;
+    transition: 2s;
+}
+.O05 {
+    margin-left: -100%;
+    transition: 2s;
+}
+
+.O01.open {
+    transition-delay: .5s;
+    margin-left: 0;
+}
+.O02.open {
+    transition-delay: 1s;
+    margin-left: 0;
+}
+.O03.open {
+    transition-delay: 1.5s;
+    margin-left: 0;
+}
+.O04.open {
+    transition-delay: 2s;
+    margin-left: 0;
+}
+.O05.open {
+    transition-delay: 2.5s;
+    margin-left: 0;
 }
