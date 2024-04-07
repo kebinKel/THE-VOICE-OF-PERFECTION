@@ -183,42 +183,42 @@ h1 {
 
 .O01 {
     margin-left: -100%;
-    transition: 2s;
+    transition: 1s;
 }
 .O02 {
     margin-left: -100%;
-    transition: 2s;
+    transition: 1s;
 }
 .O03 {
     margin-left: -100%;
-    transition: 2s;
+    transition: 1s;
 }
 .O04 {
     margin-left: -100%;
-    transition: 2s;
+    transition: 1s;
 }
 .O05 {
     margin-left: -100%;
-    transition: 2s;
+    transition: 1s;
 }
 
 .O01.open {
-    transition-delay: .5s;
+    transition-delay: .2s;
     margin-left: 0;
 }
 .O02.open {
-    transition-delay: 1s;
+    transition-delay: .4;
     margin-left: 0;
 }
 .O03.open {
-    transition-delay: 1.5s;
+    transition-delay: .6s;
     margin-left: 0;
 }
 .O04.open {
-    transition-delay: 2s;
+    transition-delay: .8s;
     margin-left: 0;
 }
 .O05.open {
-    transition-delay: 2.5s;
+    transition-delay: 1s;
     margin-left: 0;
 }
